@@ -146,7 +146,7 @@ export default function ExperienceTimeline() {
             <span className="gradient-text">Journey</span>
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-text-secondary text-sm sm:text-base max-w-xl mx-auto">
-            6+ years of progressive DevOps and infrastructure engineering experience
+            5+ years of progressive DevOps and infrastructure engineering experience
           </motion.p>
 
           {/* View Toggle */}

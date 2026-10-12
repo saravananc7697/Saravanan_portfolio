@@ -35,7 +35,7 @@ export default function About() {
               </div>
               <div className="flex items-center gap-2 text-text-secondary text-sm">
                 <Calendar size={16} className="text-accent-cyan" />
-                <span>6+ Years of DevOps Experience</span>
+                <span>5+ Years of DevOps Experience</span>
               </div>
             </div>
           </motion.div>

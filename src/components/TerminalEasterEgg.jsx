@@ -7,7 +7,7 @@ const commands = {
   help: 'Available commands:\n  whoami  - About me\n  skills  - List my technical skills\n  contact - Get contact info\n  exp     - Years of experience\n  cert    - My certifications\n  clear   - Clear terminal\n  help    - Show this help',
   whoami: `${personalInfo.name}\n${personalInfo.title}\n${personalInfo.tagline}`,
   contact: `Email: ${personalInfo.email}\nPhone: ${personalInfo.phone}\nLocation: ${personalInfo.location}`,
-  exp: '6+ years of DevOps engineering experience across 6 companies.',
+  exp: '5+ years of DevOps engineering experience across 6 companies.',
   cert: 'AWS Certified Solutions Architect – Associate (Issued Mar 2025)',
 };
 
