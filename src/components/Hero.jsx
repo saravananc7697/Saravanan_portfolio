@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Download, Mail, ArrowDown } from 'lucide-react';
+import resumeUrl from '../../Saravanan_C_Senior_DevOps_Engineer_Resume.md?url';
 import { personalInfo } from '../data/portfolioData';
 import { wordReveal } from '../utils/animations';
 
@@ -89,8 +90,8 @@ export default function Hero() {
           className="flex flex-wrap justify-center gap-4 mt-8"
         >
           <a
-            href="/resume.pdf"
-            download
+            href={resumeUrl}
+            download="Saravanan_C_Senior_DevOps_Engineer_Resume.md"
             className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-accent-blue to-accent-violet rounded-xl text-white font-medium hover:shadow-lg hover:shadow-accent-blue/20 transition-all duration-300 hover:scale-105"
           >
             <Download size={18} className="group-hover:animate-bounce" />

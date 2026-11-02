@@ -35,7 +35,7 @@ export default function About() {
               </div>
               <div className="flex items-center gap-2 text-text-secondary text-sm">
                 <Calendar size={16} className="text-accent-cyan" />
-                <span>5+ Years of DevOps Experience</span>
+                <span>Serving notice — last working day Nov 30, 2026</span>
               </div>
             </div>
           </motion.div>
@@ -47,7 +47,7 @@ export default function About() {
                 {personalInfo.summary}
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
-                {['AWS', 'Kubernetes', 'Terraform', 'CI/CD', 'Observability', 'Docker', 'Go'].map((tag) => (
+                {['AWS', 'Kubernetes', 'Terraform', 'CI/CD', 'DevSecOps', 'Observability', 'Docker'].map((tag) => (
                   <span
                     key={tag}
                     className="px-3 py-1 text-xs font-mono bg-accent-blue/10 text-accent-cyan rounded-full border border-accent-cyan/20"

@@ -58,15 +58,17 @@ export default function Certifications() {
                       Expires: {cert.expires}
                     </span>
                   </div>
-                  <a
-                    href={cert.credentialUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 mt-3 text-accent-blue hover:text-accent-cyan text-sm font-medium transition-colors"
-                  >
-                    View Credential
-                    <ExternalLink size={14} />
-                  </a>
+                  {cert.credentialUrl && (
+                    <a
+                      href={cert.credentialUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 mt-3 text-accent-blue hover:text-accent-cyan text-sm font-medium transition-colors"
+                    >
+                      View Credential
+                      <ExternalLink size={14} />
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

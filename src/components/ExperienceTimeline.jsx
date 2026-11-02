@@ -47,7 +47,7 @@ function ExperienceCard({ exp, index, isLast }) {
               </h3>
               {isCurrent && (
                 <span className="px-2 py-0.5 text-[10px] font-mono bg-accent-cyan/20 text-accent-cyan rounded-full border border-accent-cyan/30">
-                  CURRENT
+                  {exp.status || 'CURRENT'}
                 </span>
               )}
             </div>
@@ -218,7 +218,7 @@ export default function ExperienceTimeline() {
                     </span>
                     {exp.type === 'current' && (
                       <span className="text-[10px] font-mono px-2 py-0.5 bg-accent-cyan/20 text-accent-cyan rounded-full">
-                        CURRENT
+                        {exp.status || 'CURRENT'}
                       </span>
                     )}
                   </div>

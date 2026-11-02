@@ -1,13 +1,13 @@
 export const personalInfo = {
   name: 'Saravanan C',
-  title: 'Senior DevOps Engineer',
-  tagline: 'AWS • Kubernetes • Terraform • CI/CD • Observability',
+  title: 'Senior AWS Cloud & DevOps Engineer',
+  tagline: 'SRE • DevSecOps • Terraform • Kubernetes • CI/CD • Observability',
   location: 'Chennai, Tamil Nadu',
   phone: '+91 81 2451 4010',
   email: 'csaravanan7697@gmail.com',
   linkedin: 'https://www.linkedin.com/in/saravanan-c-45911b292',
   github: 'https://github.com/saravanan-c',
-  summary: `DevOps and Cloud Engineer with 5+ years of experience designing, automating and operating production AWS environments. Strong hands-on expertise in Docker and Kubernetes (EKS), Infrastructure as Code with Terraform, configuration management with Ansible, CI/CD pipelines (GitHub Actions, Jenkins, Argo CD, AWS CodePipeline) and full-stack observability using OpenTelemetry, Prometheus, Grafana and Langfuse for LLM/AI workloads. Track record of reducing release and provisioning time, improving reliability, strengthening cloud security and optimizing cloud cost. AWS Certified Solutions Architect – Associate.`,
+  summary: `Senior DevOps, DevSecOps, and Cloud Engineer with 5 years of experience securing and operating AWS production environments, microservices platforms, Kubernetes workloads, CI/CD pipelines, Infrastructure as Code, and observability stacks. Hands-on with AWS, Docker, Kubernetes, Terraform, Ansible, GitHub Actions, Jenkins, Argo CD, Prometheus, Grafana, OpenTelemetry, and Loki. Focused on shift-left security, least-privilege IAM, production troubleshooting, root-cause analysis, and cloud cost optimization. AWS Certified Solutions Architect – Associate.`,
 };
 
 export const stats = [
@@ -15,77 +15,66 @@ export const stats = [
   { label: 'MTTR Reduction', value: 40, suffix: '%', icon: 'TrendingDown' },
   { label: 'Workload Availability', value: 99.9, suffix: '%', icon: 'Activity' },
   { label: 'Faster Provisioning', value: 70, suffix: '%', icon: 'Zap' },
-  { label: 'Security Findings Reduced', value: 50, suffix: '%', icon: 'Shield' },
+  { label: 'Less Alert Noise', value: 30, suffix: '%', icon: 'Shield' },
   { label: 'Grafana Dashboards', value: 15, suffix: '+', icon: 'BarChart3' },
-  { label: 'Microservices on CI/CD', value: 8, suffix: '+', icon: 'Cpu' },
+  { label: 'Release Time Reduction', value: 50, suffix: '%', icon: 'Cpu' },
   { label: 'AWS Certifications', value: 1, suffix: '', icon: 'Award' },
 ];
 
 export const experience = [
   {
     company: 'Pente.AI Private Limited',
-    role: 'DevOps Engineer',
+    role: 'Senior DevOps and Cloud Engineer',
     location: 'Chennai',
-    period: 'Jan 2026 – Present',
+    period: 'Jan 2026 – Nov 2026',
     type: 'current',
+    status: 'NOTICE PERIOD',
     achievements: [
-      'Architected and deployed end-to-end observability stack using OpenTelemetry, enabling distributed tracing across 10+ microservices and reducing MTTR by ~40%.',
-      'Self-hosted Langfuse v3 on AWS EC2 with ClickHouse, MinIO, Redis, and PostgreSQL, integrated through the OpenTelemetry Collector for LLM/AI tracing on the Pentesites platform.',
-      'Configured Prometheus with custom alerting rules and recording rules; reduced alert noise by 30% through intelligent threshold tuning and grouping strategies.',
-      'Designed and published 15+ Grafana dashboards for real-time infrastructure and application performance monitoring, driving data-driven engineering decisions.',
-      'Operate Docker/ECR-based deployments and GitHub Actions CI/CD pipelines across a multi-service AWS production environment using EC2, ALB, CloudFront, and ECR.',
-      'Analyzed AWS VPC Flow Logs to identify and remediate anomalous traffic patterns, enhancing network security posture and supporting audit compliance.',
-      'Automated observability provisioning using Terraform, reducing manual monitoring setup from 2 days to under 2 hours.',
-      'Prepared an assessment and phased implementation plan to migrate 10+ EC2-hosted Docker services across development and production to Amazon ECS Fargate; planning and evaluation are ongoing.',
-      'Evaluating a Kubernetes-hosted AI agent for cluster health checks, troubleshooting, and approved remediation; evaluation is ongoing.',
+      'Operate secure AWS Dev and Production environments for a multi-service platform, supporting Dockerized microservices and GitHub Actions deployments across EC2, ECR, and ALB.',
+      'Implemented OpenTelemetry distributed tracing across 10+ microservices, reducing mean time to resolution by approximately 40%.',
+      'Configured Prometheus alerting and recording rules and tuned thresholds and grouping, reducing alert noise by 30%; created 15+ Grafana dashboards.',
+      'Deployed and maintained self-hosted Langfuse v3 on EC2 with ClickHouse, MinIO, Redis, and PostgreSQL; integrated application traces through the OpenTelemetry Collector.',
+      'Troubleshoot production issues involving telemetry and log delivery, disk pressure, open file descriptors, and TCP CLOSE_WAIT; perform root-cause analysis, Linux health checks, Docker log analysis, and capacity planning.',
+      'Completed the phased migration of EC2-hosted Docker microservices in Dev and Production to Amazon ECS Fargate.',
+      'Designed an AI-assisted first-level ECS Fargate troubleshooting workflow: CloudWatch alarms trigger EventBridge and a read-only Lambda agent that gathers metrics, logs, and service status, uses Amazon Bedrock to recommend diagnostic steps, and emails a report through SNS. IAM is read-only; changes require human approval.',
+      'Evaluated a Kubernetes-based AI agent for cluster monitoring and maintenance.',
+      'Analyzed AWS VPC Flow Logs to support security reviews and audit requirements.',
     ],
   },
   {
     company: 'Chola People and Marketing Services Pvt. Ltd.',
-    role: 'DevOps Engineer',
+    role: 'System Engineer - IT Infra',
     location: 'Chennai',
     period: 'Jun 2025 – Dec 2025',
     achievements: [
-      'Audited existing AWS infrastructure and executed right-sizing and reserved-instance strategies, delivering measurable reductions in monthly cloud spend.',
-      'Managed production Amazon EKS clusters end-to-end — node upgrades, auto-scaling, resource quotas, and HPA — maintaining 99.9% workload availability.',
-      'Streamlined GitHub Actions and AWS CodePipeline releases, improving deployment frequency and achieving zero-downtime rollouts through rolling updates.',
-      'Used Ansible to automate provisioning and configuration across EC2 fleets, ensuring consistent environment state.',
+      'Managed production Amazon EKS workloads, including node upgrades, autoscaling, resource quotas, and Horizontal Pod Autoscaler, supporting 99.9% workload availability.',
+      'Improved release workflows using GitHub Actions and AWS CodePipeline, supporting rolling deployments and zero-downtime rollout practices.',
+      'Audited AWS infrastructure and applied right-sizing and Reserved Instance recommendations to reduce monthly spend.',
+      'Automated EC2 fleet provisioning and configuration using Ansible.',
     ],
   },
   {
-    company: 'Cloud Brite Systems India Pvt. Ltd.',
-    role: 'DevOps Engineer',
+    company: 'Brite Systems, Inc. (USA) / Cloud Brite Systems India Pvt. Ltd.',
+    role: 'AWS Developer',
     location: 'Chennai',
     period: 'Oct 2023 – Jun 2025',
     achievements: [
-      'Designed and provisioned complete AWS production infrastructure for an enterprise SAP application from scratch — EKS cluster, RDS (PostgreSQL), ALB/NLB, and multi-tier secure VPC.',
-      'Authored reusable, modular Terraform configurations with remote state (S3 + DynamoDB locking), cutting environment provisioning time by 70% and eliminating configuration drift.',
-      'Built CI/CD pipelines with Jenkins, Argo CD, and Argo Workflows enabling GitOps-driven, automated deployments with built-in rollback across dev/staging/production.',
-      'Standardized server configuration, patching, and application deployment across hybrid on-premises/AWS environments using Ansible.',
-      'Configured AWS Direct Connect for low-latency, high-availability hybrid connectivity between on-premises data centers and AWS, supporting mission-critical SAP workloads.',
-      'Enforced IAM least-privilege, VPC segmentation, and automated security checks, reducing cloud security findings by 50%.',
+      'Designed and provisioned production AWS infrastructure for an enterprise SAP application using EKS, PostgreSQL on RDS, ALB/NLB, and a segmented multi-tier VPC.',
+      'Built reusable Terraform modules with S3 remote state and DynamoDB state locking, reducing environment provisioning time by 70% and limiting configuration drift.',
+      'Implemented CI/CD and GitOps workflows using Jenkins, Argo CD, and Argo Workflows, enabling automated deployments and rollback across Dev, staging, and Production.',
+      'Enforced IAM least privilege, VPC segmentation, and automated security checks across the delivery workflow.',
+      'Standardized server configuration, patching, and deployments across hybrid on-premises/AWS environments with Ansible; configured AWS Direct Connect for hybrid connectivity.',
     ],
   },
   {
-    company: 'Pegatron Technology India Pvt. Ltd.',
-    role: 'DevOps / Software Engineer',
+    company: 'Tata Electronics Products and Solutions Private Limited',
+    role: 'DevOps & Infrastructure Security',
     location: 'Chennai',
     period: 'Aug 2022 – Apr 2023',
     achievements: [
-      'Engineered Jenkins and GitHub Actions CI/CD pipelines for 8+ microservices, enabling fully automated build, test, and deployment workflows and cutting release time by 50%.',
-      'Containerized applications using Docker and orchestrated workloads on Kubernetes, improving deployment consistency, resource utilization, and horizontal scalability.',
-      'Developed Python and Shell automation scripts that eliminated 60% of manual operational tasks, directly improving team productivity and reducing human error.',
-    ],
-  },
-  {
-    company: 'Phoenix Facility Services',
-    role: 'DevOps Engineer',
-    location: 'Chennai',
-    period: 'Nov 2021 – Mar 2022',
-    achievements: [
-      'Administered Linux-based AWS production environments (EC2, RDS), maintaining availability and performance for business-critical applications.',
-      'Managed MySQL databases, including installation, access control, query optimization, and automated backups.',
-      'Implemented Jenkins CI/CD pipelines to automate deployments and reduce release effort.',
+      'Built Jenkins and GitHub Actions pipelines for 8+ microservices, automating build, test, and deployment and reducing release time by 50%.',
+      'Containerized applications with Docker and deployed them on Kubernetes for consistent, scalable deployments.',
+      'Developed Python and Shell automation that eliminated approximately 60% of manual operational tasks.',
     ],
   },
   {
@@ -102,16 +91,16 @@ export const experience = [
 ];
 
 export const skills = {
-  'Cloud (AWS)': ['IAM', 'VPC', 'EC2', 'S3', 'EBS', 'EFS', 'EKS', 'ECS', 'ECS Fargate', 'RDS', 'DynamoDB', 'Lambda', 'Auto Scaling', 'CloudWatch', 'CloudTrail', 'X-Ray', 'CloudFront', 'Route 53', 'ALB/NLB', 'ECR', 'ElastiCache', 'SNS', 'SQS', 'SES', 'Step Functions', 'Direct Connect', 'Transit Gateway'],
+  'Cloud (AWS)': ['EC2', 'ECS Fargate', 'EKS', 'ECR', 'Lambda', 'Amazon Bedrock', 'VPC', 'ALB/NLB', 'RDS', 'S3', 'DynamoDB', 'ElastiCache', 'SQS', 'SNS', 'EventBridge', 'IAM', 'KMS', 'CloudWatch', 'CloudTrail', 'CloudFront', 'Route 53', 'EBS', 'EFS', 'Direct Connect'],
   Containers: ['Docker', 'Docker Compose', 'Kubernetes (EKS)', 'Helm', 'Amazon ECR'],
   'IaC / Scripting': ['Terraform', 'Ansible', 'AWS CloudFormation', 'Python', 'Shell/Bash'],
-  'CI/CD': ['Jenkins', 'GitHub Actions', 'AWS CodePipeline', 'AWS CodeBuild', 'AWS CodeDeploy', 'Argo CD', 'Argo Workflows', 'Concourse CI', 'GitLab CI'],
-  Observability: ['OpenTelemetry', 'Prometheus', 'Grafana', 'Langfuse', 'Loki', 'Tempo', 'ELK Stack', 'Datadog', 'CloudWatch', 'CloudTrail', 'X-Ray'],
-  Security: ['IAM Policies', 'KMS', 'Secrets Manager', 'HashiCorp Vault', 'Security Hub', 'GuardDuty', 'WAF & Shield', 'ACM', 'VPC Flow Logs', 'Security Groups', 'AWS Direct Connect'],
+  'CI/CD': ['GitHub Actions', 'Jenkins', 'AWS CodePipeline', 'AWS CodeBuild', 'AWS CodeDeploy', 'Argo CD', 'Argo Workflows', 'GitLab CI'],
+  Observability: ['OpenTelemetry', 'OpenTelemetry Collector', 'Prometheus', 'Grafana', 'Loki', 'Tempo', 'Langfuse', 'ELK Stack', 'Datadog', 'CloudWatch', 'X-Ray'],
+  Security: ['IAM Least Privilege', 'KMS', 'Secrets Manager', 'Security Hub', 'GuardDuty', 'AWS WAF', 'ACM', 'CloudTrail', 'VPC Flow Logs', 'SonarQube', 'Shift-left DevSecOps', 'Vulnerability & Patch Compliance', 'Network Segmentation', 'Audit Support'],
   'Version Control': ['Git', 'GitHub', 'GitLab'],
-  'OS / SysAdmin': ['Amazon Linux 2/2023', 'Ubuntu', 'CentOS', 'Windows Server'],
-  'CDN / Networking': ['Nginx', 'Route 53', 'CloudFront', 'Direct Connect', 'Transit Gateway'],
-  Others: ['MySQL', 'PostgreSQL', 'SonarQube', 'Jira', 'Agile/Scrum'],
+  'OS / SysAdmin': ['Linux', 'Ubuntu', 'Amazon Linux', 'CentOS', 'Nginx'],
+  'CDN / Networking': ['VPC', 'ALB/NLB', 'Route 53', 'CloudFront', 'Direct Connect'],
+  Others: ['MySQL', 'PostgreSQL', 'Jira', 'Agile/Scrum'],
 };
 
 export const certifications = [
@@ -120,7 +109,7 @@ export const certifications = [
     issuer: 'Amazon Web Services',
     issued: 'Mar 2025',
     expires: 'Mar 2028',
-    credentialUrl: '#',
+    credentialUrl: '',
   },
 ];
 
@@ -132,24 +121,22 @@ export const education = {
 };
 
 export const architectureNodes = [
-  { id: 'dev', label: 'Developer', icon: 'Code2', x: 10, y: 50, description: 'Writes application code and commits to Git repositories.' },
-  { id: 'github', label: 'GitHub', icon: 'GitBranch', x: 25, y: 30, description: 'Source control with branch protection, PR reviews, and webhook triggers.' },
-  { id: 'cicd', label: 'CI/CD Pipeline', icon: 'GitPullRequest', x: 25, y: 70, description: 'Jenkins + Argo CD + GitHub Actions for automated builds, tests, and deployments.' },
-  { id: 'docker', label: 'Docker / ECR', icon: 'Container', x: 42, y: 50, description: 'Application containerization with Docker, images stored in Amazon ECR.' },
-  { id: 'eks', label: 'Amazon EKS', icon: 'Cloud', x: 60, y: 50, description: 'Managed Kubernetes cluster with auto-scaling, HPA, and rolling updates — 99.9% uptime.' },
-  { id: 'observability', label: 'Observability Stack', icon: 'Activity', x: 78, y: 30, description: 'OpenTelemetry tracing + Prometheus metrics + Grafana dashboards for full visibility.' },
-  { id: 'security', label: 'Security & Compliance', icon: 'Shield', x: 78, y: 70, description: 'IAM least-privilege, VPC segmentation, VPC Flow Logs, and automated audit checks.' },
+  { id: 'ecs', label: 'ECS Fargate', icon: 'Cloud', x: 10, y: 50, description: 'Dockerized services run on Amazon ECS Fargate after the completed migration from EC2-hosted containers.' },
+  { id: 'cloudwatch', label: 'CloudWatch', icon: 'Activity', x: 28, y: 30, description: 'CPU and memory alarms trigger first-level troubleshooting for ECS services.' },
+  { id: 'eventbridge', label: 'EventBridge', icon: 'GitBranch', x: 46, y: 30, description: 'Routes CloudWatch alarm events to the diagnostic Lambda agent.' },
+  { id: 'lambda', label: 'Read-only Lambda', icon: 'Code2', x: 64, y: 50, description: 'Collects ECS service status, CloudWatch metrics, and logs with read-only IAM permissions.' },
+  { id: 'bedrock', label: 'Amazon Bedrock', icon: 'Activity', x: 46, y: 70, description: 'Correlates collected evidence and recommends diagnostic steps; it does not make changes.' },
+  { id: 'sns', label: 'SNS Report', icon: 'GitPullRequest', x: 82, y: 30, description: 'Emails the diagnostic summary and recommended steps to the team.' },
+  { id: 'approval', label: 'Human Approval', icon: 'Shield', x: 82, y: 70, description: 'All remediation actions remain subject to human review and approval.' },
 ];
 
 export const architectureEdges = [
-  { from: 'dev', to: 'github' },
-  { from: 'github', to: 'cicd' },
-  { from: 'github', to: 'docker' },
-  { from: 'cicd', to: 'docker' },
-  { from: 'cicd', to: 'eks' },
-  { from: 'docker', to: 'eks' },
-  { from: 'eks', to: 'observability' },
-  { from: 'eks', to: 'security' },
+  { from: 'ecs', to: 'cloudwatch' },
+  { from: 'cloudwatch', to: 'eventbridge' },
+  { from: 'eventbridge', to: 'lambda' },
+  { from: 'lambda', to: 'bedrock' },
+  { from: 'lambda', to: 'sns' },
+  { from: 'sns', to: 'approval' },
 ];
 
 export const navLinks = [

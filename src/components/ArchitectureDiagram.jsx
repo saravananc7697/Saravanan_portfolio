@@ -51,7 +51,7 @@ export default function ArchitectureDiagram() {
             <span className="gradient-text">Systems</span>
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-text-secondary text-sm sm:text-base max-w-xl mx-auto">
-            A typical deployment pipeline — from commit to production, with full observability
+            An AI-assisted ECS Fargate diagnostic workflow with read-only access and human-approved actions
           </motion.p>
         </motion.div>
 
